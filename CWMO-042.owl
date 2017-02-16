@@ -2,27 +2,45 @@
 <rdf:RDF xmlns="http://purl.org/cwmo/#"
      xml:base="http://purl.org/cwmo/"
      xmlns:schema="https://schema.org/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:ns="http://purl.org/gi2mo/ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:voaf="http://purl.org/vocommons/voaf#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:spec="http://xmlns.com/foaf/spec/#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+	 xmlns:foaf="http://xmlns.com/foaf/0.1/#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann"
+     xmlns:dc="http://purl.org/dc/elements/1.1/" >
+	 
     <owl:Ontology rdf:about="http://purl.org/cwmo/#">
-        <rdfs:comment xml:lang="en">Creative Workshop Management Ontology (CWMO) - an ontology designed to describe the creative workshop domain, to permit reasoning on creative method and to describe resources gathered inside Creative Support System. The primary goal of the ontology is to cover all knowledge about creative workshop and creative method necessary for Creative support system. The second goal is to provide interoperability between distributed Creative Support System.</rdfs:comment>
+        <dc:description xml:lang="en">Creative Workshop Management Ontology (CWMO) - an ontology designed to describe the creative workshop domain, to permit reasoning on creative method and to describe resources gathered inside Creative Support System. The primary goal of the ontology is to cover all knowledge about creative workshop and creative method necessary for Creative support system. The second goal is to provide interoperability between distributed Creative Support System.</dc:description>
         <dc:creator>Alex Gabriel</dc:creator>
         <dc:rights xml:lang="en">This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0 &lt;br/&gt; If your reuse it for an academic purpose, please quote this article: Gabriel, A., Monticolo, D., Camargo, M., Bourgault, M., 2016. Ontology to represent the knowledge domain of a creative workshop. Presented at the The 12th International Conference on Signal Image Technology &amp; Internet Systems, Naples, Italy.</dc:rights>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Creative Workshop Management Ontology</rdfs:label>
-        <dc:publisher xml:lang="en">Alex Gabriel</dc:publisher>
-        <rdfs:comment xml:lang="en">Creative Workshop Mangement Ontology (CWMO)</rdfs:comment>
+        <dc:publisher xml:lang="en">
+			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=6htoUl4AAAAJ&hl=fr&oi=sra">Alex Gabriel</foaf:Person>
+		</dc:publisher>
+        <dc:title xml:lang="en">Creative Workshop Management Ontology (CWMO)</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.42</owl:versionInfo>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.41</owl:priorVersion>
-        <dc:contributor xml:lang="en">Davy Monticolo, Mauricio Camargo, Mario Bourgault</dc:contributor>
-        <rdfs:comment>10/02/2017</rdfs:comment>
+        <dc:contributor>
+			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=6htoUl4AAAAJ&hl=fr&oi=sra">Alex Gabriel</foaf:Person>
+		</dc:contributor>
+		<dc:contributor>
+			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=ttiddZkAAAAJ&hl=fr&oi=sra">Davy Monticolo</foaf:Person>
+		</dc:contributor>
+		<dc:contributor>
+			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=2o5hAtIAAAAJ&hl=fr&oi=sra">Mauricio Camargo</foaf:Person>
+		</dc:contributor>
+		<dc:contributor>
+			<foaf:Person rdf:about="http://www.polymtl.ca/recherche/rc/professeurs/details.php?NoProf=157">Mario Bourgault</foaf:Person>
+		</dc:contributor>
+        <dc:modified>16/02/2017</dc:modified>
+		<vann:preferredNamespacePrefix>cwmo</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://purl.org/cwmo/#</vann:preferredNamespaceUri>
     </owl:Ontology>
     
 
@@ -1759,19 +1777,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#AEIOU -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#AEIOU">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <terms:title xml:lang="en">AEIOU</terms:title>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#AM -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#AM">
@@ -1781,23 +1786,7 @@
     
 
 
-    <!-- http://purl.org/cwmo/#Acceptability -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Acceptability">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</weight>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Aesthetic -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Aesthetic">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-        <isCriterizedBy rdf:resource="http://purl.org/cwmo/#Anon2"/>
-        <scale rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</scale>
-    </owl:NamedIndividual>
-    
 
 
     <!-- http://purl.org/cwmo/#AffinityDiagramming -->
@@ -1821,112 +1810,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#Alex -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Alex">
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2015"/>
-        <spec:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</spec:firstName>
-        <spec:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriel</spec:lastName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Anon1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Anon1">
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Anon2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Anon2"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#Anon3 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Anon3">
-        <schema:memberOf rdf:resource="http://purl.org/cwmo/#GeneralizedInc"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Applicability -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Applicability">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ArtifactAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ArtifactAnalysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <terms:title xml:lang="en">Artifact Analysis</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Attitudinal -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Attitudinal">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#InputType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#AutomatedRemoteResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#AutomatedRemoteResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Crowdsourcing"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Experiment"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#RemoteModeratedResearch"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#DigitalDevice"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Behavioral -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Behavioral">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#InputType"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#BehavioralMapping -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#BehavioralMapping">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#FlyOnWallObservation"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Shadowing"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UnobtrusiveMeasure"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#ColoredPencils"/>
-    </owl:NamedIndividual>
-    
 
 
     <!-- http://purl.org/cwmo/#BendItShapeIt -->
@@ -1968,186 +1851,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#BrainstormGraphicOrganizers -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#BrainstormGraphicOrganizers">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CognitiveMapping"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ConceptMapping"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#MindMapping"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#PostIt"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#Whiteboard"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#WhiteboardPencil"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Brainwriting -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Brainwriting">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Bubbl.us -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Bubbl.us">
-        <website rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bubbl.us/</website>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#BusinessOrigami -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#BusinessOrigami">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CreativeToolkit"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignWorkshop"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UserJourneyMaps"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#Cardboard"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#ColoredPencils"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#Paper"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CAD1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CAD1">
-        <isMaterializing rdf:resource="http://purl.org/cwmo/#Idea1"/>
-        <isRealisedBy rdf:resource="http://purl.org/cwmo/#GrosAnon1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Camera -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Camera"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#CardSorting -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CardSorting">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AutomatedRemoteResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ContentInventoryAudit"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesirabilityTesting"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Cardboard -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Cardboard"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#CaseStudy -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CaseStudy">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#EvidenceBasedDesign"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ResearchThroughDesign"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#SecondaryResearch"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ChefAnon -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ChefAnon">
-        <organize rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-        <organize rdf:resource="http://purl.org/cwmo/#cw48h2015"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Coggle -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Coggle">
-        <website rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://coggle.it/</website>
-        <terms:description xml:lang="en">Online and free mindmapping application.</terms:description>
-        <terms:title xml:lang="en">Coggle</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CognitiveMapping -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CognitiveMapping">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ContentAnalysis"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ExploratoryResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Interviews"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CognitiveWalkthrough -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CognitiveWalkthrough">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#HeuristicEvaluation"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ThinkAloudProtocol"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#WizardOz"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Collage -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Collage">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CreativeToolkit"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#GenerativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParticipatoryDesign"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#CollectiveMode -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CollectiveMode">
@@ -2156,26 +1859,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#ColoredPencils -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ColoredPencils"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#CompetitiveTesting -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CompetitiveTesting">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#KanoAnalysis"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ThinkAloudProtocol"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-    </owl:NamedIndividual>
-    
 
 
     <!-- http://purl.org/cwmo/#Completeness -->
@@ -2205,247 +1888,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#ConceptMapping -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ConceptMapping">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#BrainstormGraphicOrganizers"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CognitiveMapping"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#MindMapping"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ContentAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ContentAnalysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AffinityDiagramming"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ThematicNetwork"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#WordCloud"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ContentInventoryAudit -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ContentInventoryAudit">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CardSorting"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#KeyPerfIndicator"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#SiteSearchAnalysis"/>
-        <terms:title xml:lang="en">Content Inventory and Audit</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ContextualDesign -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ContextualDesign">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AffinityDiagramming"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ContextualInquiry"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Storyboard"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ContextualInquiry -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ContextualInquiry">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AffinityDiagramming"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ContextualDesign"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Interviews"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CreatStrat1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CreatStrat1">
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#MindMapping"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#Prototyping"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#Shadowing"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#TerritoryMap"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#Triangulation"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#UserJourneyMaps"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#WeightedMatrix"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#WordCloud"/>
-        <isPlanifiedBy rdf:resource="http://purl.org/cwmo/#Alex"/>
-        <organizeResponseTo rdf:resource="http://purl.org/cwmo/#SportSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CreatStrat2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CreatStrat2">
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#Questionnaires"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#StakeholdersMap"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#TaskAnalysis"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#TouchstoneTour"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-        <hasCreatTechnic rdf:resource="http://purl.org/cwmo/#WeightedMatrix"/>
-        <isPlanifiedBy rdf:resource="http://purl.org/cwmo/#Davy"/>
-        <organizeResponseTo rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CreativeToolkit -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CreativeToolkit">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignWorkshop"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#GenerativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParticipatoryDesign"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CriticalIncidentTechnique -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CriticalIncidentTechnique">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DiaryStudy"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DirectedStorytelling"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Interviews"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Crowdsourcing -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Crowdsourcing">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AutomatedRemoteResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#PhotoStudies"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Triangulation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Ctxt1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Ctxt1">
-        <hasContextType rdf:resource="http://purl.org/cwmo/#NPD"/>
-        <terms:description xml:lang="en">Faced to the highly innovative market, the company has to get a new product to be on the leaderboard in the sector.</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Ctxt2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Ctxt2">
-        <hasContextType rdf:resource="http://purl.org/cwmo/#PSI"/>
-        <terms:description xml:lang="en">the company want to assure there leader position</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CulturalProbes -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CulturalProbes">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DiaryStudy"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ExperienceSamplingMethod"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#PhotoStudies"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#CustomerExperienceAudit -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#CustomerExperienceAudit">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DiaryStudy"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DirectedStorytelling"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ExperienceSamplingMethod"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Davy -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Davy">
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2015"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Definition -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Definition">
@@ -2455,47 +1897,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#DesSportsInc -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DesSportsInc">
-        <schema:member rdf:resource="http://purl.org/cwmo/#Anon2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#DesignCharette -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DesignCharette">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignWorkshop"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParallelPrototyping"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParticipatoryDesign"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#DesignEthnography -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DesignEthnography">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CulturalProbes"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ExploratoryResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParticipantObservation"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#DesignProcess -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DesignProcess">
@@ -2504,115 +1905,8 @@
     
 
 
-    <!-- http://purl.org/cwmo/#DesignWorkshop -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DesignWorkshop">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CreativeToolkit"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#GenerativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParticipatoryDesign"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#DesirabilityTesting -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DesirabilityTesting">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Triangulation"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UsabilityTesting"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#DiaryStudy -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DiaryStudy">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CulturalProbes"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ExperienceSamplingMethod"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#PhotoStudies"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#DigitalDevice -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DigitalDevice"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#DirectedStorytelling -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#DirectedStorytelling">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CriticalIncidentTechnique"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Interviews"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#PictureCards"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Effectivness -->
-
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Effectivness">
         <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ElitoMethod -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ElitoMethod">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CulturalProbes"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignEthnography"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#TouchstoneTour"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ErgonomicAnlysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ErgonomicAnlysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#EvaluativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#TaskAnalysis"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UsabilityTesting"/>
     </owl:NamedIndividual>
     
 
@@ -2629,27 +1923,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#EvalStrat1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#EvalStrat1">
-        <evalStratPlannedBy rdf:resource="http://purl.org/cwmo/#Anon2"/>
-        <evaluateResponseTo rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-        <hasEvalTechnic rdf:resource="http://purl.org/cwmo/#FreeReview"/>
-        <hasEvalTechnic rdf:resource="http://purl.org/cwmo/#UpAndDownVote"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#EvalStrat2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#EvalStrat2">
-        <evalStratPlannedBy rdf:resource="http://purl.org/cwmo/#Anon3"/>
-        <evaluateResponseTo rdf:resource="http://purl.org/cwmo/#SportSubject"/>
-        <hasEvalTechnic rdf:resource="http://purl.org/cwmo/#MultiCriteriaScore"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Evaluation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Evaluation">
@@ -2660,99 +1933,6 @@
         <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#Generation"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#EvaluativeResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#EvaluativeResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ABTesting"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#HeuristicEvaluation"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ThinkAloudProtocol"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#EvidenceBasedDesign -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#EvidenceBasedDesign">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CaseStudy"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#LiteratureReview"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#SecondaryResearch"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ExperiencePrototyping -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ExperiencePrototyping">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Bodystorming"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Roleplaying"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#WizardOz"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ExperienceSamplingMethod -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ExperienceSamplingMethod">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignEthnography"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DiaryStudy"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#PhotoStudies"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Experiment -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Experiment">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ABTesting"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#EvaluativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Eyetracking"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ExpertReview -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ExpertReview">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#ParticipantRole"/>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/cwmo/#Exploration -->
 
@@ -2765,47 +1945,12 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#ExploratoryResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ExploratoryResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CulturalProbes"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignEthnography"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Observation"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Expressivness -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Expressivness">
         <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#Eyetracking -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Eyetracking">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AutomatedRemoteResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#EvaluativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Experiment"/>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/cwmo/#Feasibility -->
 
@@ -2817,50 +1962,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#FlexibleModeling -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#FlexibleModeling">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#FlyOnWallObservation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#FlyOnWallObservation">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Observation"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Shadowing"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UnobtrusiveMeasure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#FocusGroup -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#FocusGroup">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DirectedStorytelling"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Laddering"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Surveys"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#FreeReview -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#FreeReview">
@@ -2868,20 +1969,6 @@
         <applyEvaluationThanks rdf:resource="http://purl.org/cwmo/#Complexity"/>
         <evalTechAppliedBy rdf:resource="http://purl.org/cwmo/#Anon3"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#GeneralScore -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GeneralScore">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#GeneralizedInc -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GeneralizedInc"/>
     
 
 
@@ -2896,168 +1983,12 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#GenerativeResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GenerativeResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CreativeToolkit"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#FlexibleModeling"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ParticipatoryDesign"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#GraffitiWall -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GraffitiWall">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ExploratoryResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Observation"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UnobtrusiveMeasure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#GrandAnon1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GrandAnon1">
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#GrandAnon2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GrandAnon2"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#GrosAnon1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GrosAnon1">
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#GuidedReview -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#GuidedReview">
         <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#HelmetSubject -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#HelmetSubject">
-        <isSolvedDuring rdf:resource="http://purl.org/cwmo/#cw48h2014"/>
-        <possessObjective rdf:resource="http://purl.org/cwmo/#obj1"/>
-        <terms:title xml:lang="en">New way to protect bikers</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#HeuristicEvaluation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#HeuristicEvaluation">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#CognitiveWalkthrough"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#EvaluativeResearch"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Prototyping"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#HumanRess -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#HumanRess">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#ContextType"/>
-        <rdfs:label xml:lang="en">Human Resources</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Idea1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Idea1">
-        <hasAuthor rdf:resource="http://purl.org/cwmo/#Anon1"/>
-        <hasCTSource rdf:resource="http://purl.org/cwmo/#Prototyping"/>
-        <hasGroupAuthor rdf:resource="http://purl.org/cwmo/#Team1"/>
-        <score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.7</score>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Idea2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Idea2">
-        <hasCTSource rdf:resource="http://purl.org/cwmo/#WeightedMatrix"/>
-        <hasGroupAuthor rdf:resource="http://purl.org/cwmo/#Team3"/>
-        <score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.4</score>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Idea3 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Idea3">
-        <hasAuthor rdf:resource="http://purl.org/cwmo/#GrandAnon1"/>
-        <hasCTSource rdf:resource="http://purl.org/cwmo/#MindMapping"/>
-        <hasGroupAuthor rdf:resource="http://purl.org/cwmo/#Team2"/>
-        <score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.1</score>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Idea4 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Idea4">
-        <hasAuthor rdf:resource="http://purl.org/cwmo/#GrandAnon2"/>
-        <hasCTSource rdf:resource="http://purl.org/cwmo/#Shadowing"/>
-        <hasGroupAuthor rdf:resource="http://purl.org/cwmo/#Team3"/>
-        <score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.3</score>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Idea5 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Idea5">
-        <hasAuthor rdf:resource="http://purl.org/cwmo/#GrosAnon1"/>
-        <hasCTSource rdf:resource="http://purl.org/cwmo/#StakeholdersMap"/>
-        <hasGroupAuthor rdf:resource="http://purl.org/cwmo/#Team1"/>
-        <score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</score>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Idea6 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Idea6">
-        <hasCTSource rdf:resource="http://purl.org/cwmo/#TaskAnalysis"/>
-        <hasGroupAuthor rdf:resource="http://purl.org/cwmo/#Team2"/>
-        <score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.8</score>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/cwmo/#IdeaEvaluation -->
 
@@ -3084,22 +2015,6 @@
         <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#ProblemAnalysis"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#ImageBoard -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ImageBoard">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#MindMapping"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#StakeholdersMap"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#TerritoryMap"/>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/cwmo/#ImplementAndMonitoring -->
 
@@ -3139,166 +2054,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#Ingenuity -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Ingenuity">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Interviews -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Interviews">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#KJTechnique -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#KJTechnique">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#AffinityDiagramming"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#WeightedMatrix"/>
-        <requireEquipment rdf:resource="http://purl.org/cwmo/#PostIt"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#KanoAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#KanoAnalysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesirabilityTesting"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Surveys"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#KeyPerfIndicator -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#KeyPerfIndicator">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Evaluation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QuantitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#SiteSearchAnalysis"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#WebAnalytics"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Laddering -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Laddering">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Interviews"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Triading"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Legislation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Legislation">
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#LiteratureReview -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#LiteratureReview">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#UnobtrusiveMeasure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#LoveBreakerLetter -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#LoveBreakerLetter">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesignWorkshop"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DesirabilityTesting"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#ValueOpportunityAnalysis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Mechanic -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Mechanic">
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#SportSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#MentalModelDiagram -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#MentalModelDiagram">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Exploration"/>
-        <hasFunction rdf:resource="http://purl.org/cwmo/#Generation"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Attitudinal"/>
-        <hasInputType rdf:resource="http://purl.org/cwmo/#Behavioral"/>
-        <isProducingData rdf:resource="http://purl.org/cwmo/#QualitativeData"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#DiaryStudy"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#Interviews"/>
-        <isRelatedTo rdf:resource="http://purl.org/cwmo/#TaskAnalysis"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#MindMapping -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#MindMapping">
@@ -3317,18 +2072,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#MultiCriteriaScore -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#MultiCriteriaScore">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
-        <applyEvaluationThanks rdf:resource="http://purl.org/cwmo/#Completeness"/>
-        <applyEvaluationThanks rdf:resource="http://purl.org/cwmo/#Feasibility"/>
-        <applyEvaluationThanks rdf:resource="http://purl.org/cwmo/#Originality"/>
-        <applyEvaluationThanks rdf:resource="http://purl.org/cwmo/#Relevance"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#NPD -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#NPD">
@@ -3338,27 +2081,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#Notebook -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Notebook"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#Observation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Observation">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Observational -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Observational">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#ParticipantRole"/>
-    </owl:NamedIndividual>
-    
 
 
     <!-- http://purl.org/cwmo/#Originality -->
@@ -3380,92 +2102,10 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#Paper -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Paper"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#PaperBoard -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#PaperBoard"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#ParallelPrototyping -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ParallelPrototyping">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ParticipantObservation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ParticipantObservation">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Participatory -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Participatory">
         <rdf:type rdf:resource="http://purl.org/cwmo/#ParticipantRole"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ParticipatoryActionResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ParticipatoryActionResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ParticipatoryDesign -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ParticipatoryDesign">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Pb1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Pb1">
-        <hasContext rdf:resource="http://purl.org/cwmo/#Ctxt2"/>
-        <isFormalizedInto rdf:resource="http://purl.org/cwmo/#SportSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Pb2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Pb2">
-        <hasContext rdf:resource="http://purl.org/cwmo/#Ctxt1"/>
-        <isFormalizedInto rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#PersonalInventory -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#PersonalInventory">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
     </owl:NamedIndividual>
     
 
@@ -3486,56 +2126,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#PetitAnon1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#PetitAnon1">
-        <isParticipatingTo rdf:resource="http://purl.org/cwmo/#cw48h2015"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#PhotoStudies -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#PhotoStudies">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Physiognomy -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Physiognomy">
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#SportSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#PictureCards -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#PictureCards">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Popplet -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Popplet">
-        <website rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://popplet.com/</website>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#PostIt -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#PostIt"/>
-    
-
-
     <!-- http://purl.org/cwmo/#ProblemAnalysis -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ProblemAnalysis">
@@ -3549,16 +2139,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#Prototyping -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Prototyping">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#QualitativeData -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#QualitativeData">
@@ -3566,14 +2146,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#Quality -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Quality">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</weight>
-    </owl:NamedIndividual>
-    
 
 
     <!-- http://purl.org/cwmo/#QuantitativeData -->
@@ -3583,34 +2155,6 @@
     </owl:NamedIndividual>
     
 
-
-    <!-- http://purl.org/cwmo/#Questionnaires -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Questionnaires">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#RITE -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#RITE">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-        <terms:title xml:lang="en">Rapid Iterative Testing and Evaluation (RITE)</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Rarity -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Rarity">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-    </owl:NamedIndividual>
-    
 
 
     <!-- http://purl.org/cwmo/#Related -->
@@ -3629,205 +2173,12 @@
     
 
 
-    <!-- http://purl.org/cwmo/#RemoteModeratedResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#RemoteModeratedResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ResearchThroughDesign -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ResearchThroughDesign">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Roleplaying -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Roleplaying">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Safety -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Safety">
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ScenarioDescriptionSwimlanes -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ScenarioDescriptionSwimlanes">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Scenarios -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Scenarios">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SecondaryResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SecondaryResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Security -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Security">
-        <hasEquivalent rdf:resource="http://purl.org/cwmo/#Safety"/>
-        <isCoveredBy rdf:resource="http://purl.org/cwmo/#HelmetSubject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SelfReporting -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SelfReporting">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#ParticipantRole"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SemanticDifferential -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SemanticDifferential">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Shadowing -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Shadowing">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SimulationExercise -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SimulationExercise">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SiteSearchAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SiteSearchAnalysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Specificity -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Specificity">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SpeedDating -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SpeedDating">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#SportSubject -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#SportSubject">
-        <isSolvedDuring rdf:resource="http://purl.org/cwmo/#cw48h2015"/>
-        <possessObjective rdf:resource="http://purl.org/cwmo/#obj2"/>
-        <terms:title xml:lang="en">Sport in urban context</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#StakeHolderWalkthrough -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#StakeHolderWalkthrough">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#StakeholdersMap -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#StakeholdersMap">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Storyboard -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Storyboard">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Strategy -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Strategy">
         <rdf:type rdf:resource="http://purl.org/cwmo/#ContextType"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#Surveys -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Surveys">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/cwmo/#Synthesis -->
 
@@ -3842,109 +2193,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#TaskAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#TaskAnalysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Team1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Team1"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#Team2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Team2"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#Team3 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Team3"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#TerritoryMap -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#TerritoryMap">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ThematicNetwork -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ThematicNetwork">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ThinkAloudProtocol -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ThinkAloudProtocol">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#TimeAwareResearch -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#TimeAwareResearch">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#TouchstoneTour -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#TouchstoneTour">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Triading -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Triading">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Definition"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Triangulation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Triangulation">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#UnobtrusiveMeasure -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#UnobtrusiveMeasure">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Unrelated -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Unrelated">
@@ -3953,54 +2201,6 @@
     
 
 
-    <!-- http://purl.org/cwmo/#UpAndDownVote -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#UpAndDownVote">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationTechnic"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#UsabilityReport -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#UsabilityReport">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#UsabilityTesting -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#UsabilityTesting">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#UserJourneyMaps -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#UserJourneyMaps">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#ValueOpportunityAnalysis -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#ValueOpportunityAnalysis">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
 
     <!-- http://purl.org/cwmo/#Verbal -->
 
@@ -4008,58 +2208,6 @@
         <rdf:type rdf:resource="http://purl.org/cwmo/#ExpressionMode"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#WebAnalytics -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#WebAnalytics">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#WeightedMatrix -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#WeightedMatrix">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#Whiteboard -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Whiteboard"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#WhiteboardPencil -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#WhiteboardPencil"/>
-    
-
-
-    <!-- http://purl.org/cwmo/#WizardOz -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#WizardOz">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#EvalAndRafinement"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#WordCloud -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#WordCloud">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeTechnique"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <hasCreativePhase rdf:resource="http://purl.org/cwmo/#Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/cwmo/#Workability -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Workability">
@@ -4074,77 +2222,6 @@
         <rdf:type rdf:resource="http://purl.org/cwmo/#ExpressionMode"/>
     </owl:NamedIndividual>
     
-
-
-    <!-- http://purl.org/cwmo/#advc1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#advc1">
-        <adviceAdressedTo rdf:resource="http://purl.org/cwmo/#Team3"/>
-        <advicedBy rdf:resource="http://purl.org/cwmo/#Anon3"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#advc2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#advc2">
-        <adviceAdressedTo rdf:resource="http://purl.org/cwmo/#Team2"/>
-        <advicedBy rdf:resource="http://purl.org/cwmo/#Davy"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#cw48h2014 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#cw48h2014">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeWorkshop"/>
-        <possessEquipment rdf:resource="http://purl.org/cwmo/#PostIt"/>
-        <possessEquipment rdf:resource="http://purl.org/cwmo/#Whiteboard"/>
-        <possessEquipment rdf:resource="http://purl.org/cwmo/#WhiteboardPencil"/>
-        <progress rdf:resource="http://purl.org/cwmo/#Ideation"/>
-        <terms:description xml:lang="en">Tis workshops was an international edition</terms:description>
-        <terms:title xml:lang="fr">48h pour faire vivre des idées 2014</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#cw48h2015 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#cw48h2015">
-        <rdf:type rdf:resource="http://purl.org/cwmo/#CreativeWorkshop"/>
-        <progress rdf:resource="http://purl.org/cwmo/#IdeaEvaluation"/>
-        <terms:title xml:lang="en">48h for generate ideas</terms:title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#obj1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#obj1">
-        <innovationRange xml:lang="en">radical</innovationRange>
-        <terms:description xml:lang="en">Genrate the maximum of ideas without spend too much time in technical feasbility.</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#obj2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#obj2">
-        <innovationRange xml:lang="en">incremental</innovationRange>
-        <innovationRange xml:lang="en">radical</innovationRange>
-        <terms:description xml:lang="en">subject idea that respond to the problemtic and exploring the materialization of the ideas with also a thought for feasbility.</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/cwmo/#proto1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#proto1">
-        <isMaterializing rdf:resource="http://purl.org/cwmo/#Idea3"/>
-        <isRealisedBy rdf:resource="http://purl.org/cwmo/#GrandAnon2"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
-
 
 
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
