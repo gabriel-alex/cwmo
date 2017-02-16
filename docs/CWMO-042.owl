@@ -8,39 +8,28 @@
      xmlns:voaf="http://purl.org/vocommons/voaf#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:spec="http://xmlns.com/foaf/spec/#"
-	 xmlns:foaf="http://xmlns.com/foaf/0.1/#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vocab="http://purl.org/vocab/"
      xmlns:vann="http://purl.org/vocab/vann"
      xmlns:dc="http://purl.org/dc/elements/1.1/" >
-	 
     <owl:Ontology rdf:about="http://purl.org/cwmo/#">
-        <dc:description xml:lang="en">Creative Workshop Management Ontology (CWMO) - an ontology designed to describe the creative workshop domain, to permit reasoning on creative method and to describe resources gathered inside Creative Support System. The primary goal of the ontology is to cover all knowledge about creative workshop and creative method necessary for Creative support system. The second goal is to provide interoperability between distributed Creative Support System.</dc:description>
-        <dc:creator>Alex Gabriel</dc:creator>
-        <dc:rights xml:lang="en">This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0 &lt;br/&gt; If your reuse it for an academic purpose, please quote this article: Gabriel, A., Monticolo, D., Camargo, M., Bourgault, M., 2016. Ontology to represent the knowledge domain of a creative workshop. Presented at the The 12th International Conference on Signal Image Technology &amp; Internet Systems, Naples, Italy.</dc:rights>
-        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Creative Workshop Management Ontology</rdfs:label>
-        <dc:publisher xml:lang="en">
-			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=6htoUl4AAAAJ&hl=fr&oi=sra">Alex Gabriel</foaf:Person>
-		</dc:publisher>
+        <dc:contributor xml:lang="en">Alex Gabriel</dc:contributor>
+        <vocab:vannpreferredNamespacePrefix>cwmo</vocab:vannpreferredNamespacePrefix>
         <dc:title xml:lang="en">Creative Workshop Management Ontology (CWMO)</dc:title>
+        <dc:contributor xml:lang="en">Davy Monticolo</dc:contributor>
+        <dc:rights xml:lang="en">This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0 &lt;br/&gt; If your reuse it for an academic purpose, please quote this article: Gabriel, A., Monticolo, D., Camargo, M., Bourgault, M., 2016. Ontology to represent the knowledge domain of a creative workshop. Presented at the The 12th International Conference on Signal Image Technology &amp; Internet Systems, Naples, Italy.</dc:rights>
+        <dc:contributor xml:lang="en">Mario Bourgault</dc:contributor>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Creative Workshop Management Ontology</rdfs:label>
+        <dc:creator xml:lang="en">Alex Gabriel</dc:creator>
+        <dc:publisher xml:lang="en">Alex Gabriel</dc:publisher>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.42</owl:versionInfo>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.41</owl:priorVersion>
-        <dc:contributor>
-			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=6htoUl4AAAAJ&hl=fr&oi=sra">Alex Gabriel</foaf:Person>
-		</dc:contributor>
-		<dc:contributor>
-			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=ttiddZkAAAAJ&hl=fr&oi=sra">Davy Monticolo</foaf:Person>
-		</dc:contributor>
-		<dc:contributor>
-			<foaf:Person rdf:about="https://scholar.google.fr/citations?user=2o5hAtIAAAAJ&hl=fr&oi=sra">Mauricio Camargo</foaf:Person>
-		</dc:contributor>
-		<dc:contributor>
-			<foaf:Person rdf:about="http://www.polymtl.ca/recherche/rc/professeurs/details.php?NoProf=157">Mario Bourgault</foaf:Person>
-		</dc:contributor>
+        <vocab:vannpreferredNamespaceUri>http://purl.org/cwmo/#</vocab:vannpreferredNamespaceUri>
         <dc:modified>16/02/2017</dc:modified>
-		<vann:preferredNamespacePrefix>cwmo</vann:preferredNamespacePrefix>
-		<vann:preferredNamespaceUri>http://purl.org/cwmo/#</vann:preferredNamespaceUri>
+        <dc:contributor xml:lang="en">Mauricio Camargo</dc:contributor>
+        <dc:description xml:lang="en">Creative Workshop Management Ontology (CWMO) - an ontology designed to describe the creative workshop domain, to permit reasoning on creative method and to describe resources gathered inside Creative Support System. The primary goal of the ontology is to cover all knowledge about creative workshop and creative method necessary for Creative support system. The second goal is to provide interoperability between distributed Creative Support System.</dc:description>
     </owl:Ontology>
     
 
@@ -2163,23 +2152,18 @@
         <rdf:type rdf:resource="http://purl.org/cwmo/#StimuliType"/>
     </owl:NamedIndividual>
     
-
-
     <!-- http://purl.org/cwmo/#Relevance -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Relevance">
         <rdf:type rdf:resource="http://purl.org/cwmo/#EvaluationCriteria"/>
     </owl:NamedIndividual>
     
-
-
     <!-- http://purl.org/cwmo/#Strategy -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Strategy">
         <rdf:type rdf:resource="http://purl.org/cwmo/#ContextType"/>
     </owl:NamedIndividual>
     
-
     <!-- http://purl.org/cwmo/#Synthesis -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Synthesis">
@@ -2191,17 +2175,12 @@
         <rdfs:seeAlso rdf:resource="http://purl.org/cwmo/#ImplementAndMonitoring"/>
     </owl:NamedIndividual>
     
-
-
     <!-- http://purl.org/cwmo/#Unrelated -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Unrelated">
         <rdf:type rdf:resource="http://purl.org/cwmo/#StimuliType"/>
     </owl:NamedIndividual>
     
-
-
-
     <!-- http://purl.org/cwmo/#Verbal -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Verbal">
@@ -2221,8 +2200,7 @@
     <owl:NamedIndividual rdf:about="http://purl.org/cwmo/#Written">
         <rdf:type rdf:resource="http://purl.org/cwmo/#ExpressionMode"/>
     </owl:NamedIndividual>
-    
+ </rdf:RDF>  
 
 
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
-
