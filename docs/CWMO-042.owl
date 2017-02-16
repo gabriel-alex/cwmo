@@ -11,12 +11,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:vocab="http://purl.org/vocab/"
      xmlns:vann="http://purl.org/vocab/vann"
      xmlns:dc="http://purl.org/dc/elements/1.1/" >
     <owl:Ontology rdf:about="http://purl.org/cwmo/#">
         <dc:contributor xml:lang="en">Alex Gabriel</dc:contributor>
-        <vocab:vannpreferredNamespacePrefix>cwmo</vocab:vannpreferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>cwmo</vann:preferredNamespacePrefix>
         <dc:title xml:lang="en">Creative Workshop Management Ontology (CWMO)</dc:title>
         <dc:contributor xml:lang="en">Davy Monticolo</dc:contributor>
         <dc:rights xml:lang="en">This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0 &lt;br/&gt; If your reuse it for an academic purpose, please quote this article: Gabriel, A., Monticolo, D., Camargo, M., Bourgault, M., 2016. Ontology to represent the knowledge domain of a creative workshop. Presented at the The 12th International Conference on Signal Image Technology &amp; Internet Systems, Naples, Italy.</dc:rights>
@@ -26,7 +25,7 @@
         <dc:publisher xml:lang="en">Alex Gabriel</dc:publisher>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.42</owl:versionInfo>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.41</owl:priorVersion>
-        <vocab:vannpreferredNamespaceUri>http://purl.org/cwmo/#</vocab:vannpreferredNamespaceUri>
+        <vann:preferredNamespaceUri>http://purl.org/cwmo/#</vann:preferredNamespaceUri>
         <dc:modified>16/02/2017</dc:modified>
         <dc:contributor xml:lang="en">Mauricio Camargo</dc:contributor>
         <dc:description xml:lang="en">Creative Workshop Management Ontology (CWMO) - an ontology designed to describe the creative workshop domain, to permit reasoning on creative method and to describe resources gathered inside Creative Support System. The primary goal of the ontology is to cover all knowledge about creative workshop and creative method necessary for Creative support system. The second goal is to provide interoperability between distributed Creative Support System.</dc:description>
