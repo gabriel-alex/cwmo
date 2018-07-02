@@ -81,10 +81,10 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Creative Workshop Management Ontology (CWMO) - an ontology designed to describe the creative workshop domain, to permit reasoning on creative method and to describe resources gathered inside Creative Support System. The primary goal of the ontology is to cover all knowledge about creative workshop and creative method necessary for Creative support system. The second goal is to provide interoperability between distributed Creative Support System.</Literal>
     </Annotation>
     <Declaration>
-        <NamedIndividual IRI="WhiteboardPencil"/>
+        <NamedIndividual IRI="CreatStrat2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="CreatStrat2"/>
+        <NamedIndividual IRI="WhiteboardPencil"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ParticipatoryDesign"/>
@@ -93,19 +93,19 @@
         <ObjectProperty IRI="hasLastSegment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="organize"/>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <ObjectProperty IRI="organize"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Storyboard"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="TouchstoneTour"/>
+        <NamedIndividual IRI="PICLedBrains"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="PICLedBrains"/>
+        <NamedIndividual IRI="TouchstoneTour"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Originality"/>
@@ -117,25 +117,25 @@
         <NamedIndividual IRI="break"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isSupportedBy"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="NoveltyDegree"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="AEIOU"/>
+        <ObjectProperty IRI="isSupportedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="evalStratPlannedBy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="AEIOU"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="ErgonomicAnlysis"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://schema.org/keyword"/>
+        <NamedIndividual IRI="ContentAnalysis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ContentAnalysis"/>
+        <DataProperty IRI="http://schema.org/keyword"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Idea3"/>
@@ -162,10 +162,10 @@
         <NamedIndividual IRI="CreatStrat1"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasDifficulty"/>
+        <NamedIndividual IRI="Safety"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Safety"/>
+        <ObjectProperty IRI="hasDifficulty"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="CreatStrat3"/>
@@ -174,13 +174,13 @@
         <Class IRI="Equipment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="UserJourneyMaps"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="HighEnergy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="SayCheese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="UserJourneyMaps"/>
     </Declaration>
     <Declaration>
         <Class IRI="SuggestedCT"/>
@@ -210,10 +210,10 @@
         <NamedIndividual IRI="CreativeToolkit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isRelatedTo"/>
+        <ObjectProperty IRI="hasGroupAuthor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasGroupAuthor"/>
+        <ObjectProperty IRI="isRelatedTo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Physiognomy"/>
@@ -225,25 +225,25 @@
         <NamedIndividual IRI="ParticipantObservation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="GraffitiWall"/>
+        <NamedIndividual IRI="NounHounds"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="NounHounds"/>
+        <NamedIndividual IRI="GraffitiWall"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="SAMMIAm"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ContentInventoryAudit"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="isParticipatingTo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Generation"/>
+        <NamedIndividual IRI="ContentInventoryAudit"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="possessObjective"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Generation"/>
     </Declaration>
     <Declaration>
         <Class IRI="QuantityLevel"/>
@@ -270,10 +270,10 @@
         <NamedIndividual IRI="KJTechnique"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="LiteratureReview"/>
+        <NamedIndividual IRI="Switcheroo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Switcheroo"/>
+        <NamedIndividual IRI="LiteratureReview"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="CreatStrat5"/>
@@ -324,16 +324,16 @@
         <DataProperty IRI="procedure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DrawingRoom"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="difficulty"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Eyetracking"/>
+        <NamedIndividual IRI="DrawingRoom"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="PictureCards"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Eyetracking"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Anon1"/>
@@ -372,16 +372,16 @@
         <Class IRI="Organizer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="LowNovelty"/>
-    </Declaration>
-    <Declaration>
         <DataProperty abbreviatedIRI="terms:title"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="WordDiamond"/>
+        <NamedIndividual IRI="LowNovelty"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="CardSorting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="WordDiamond"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasNextStage"/>
@@ -396,10 +396,10 @@
         <DataProperty IRI="ideaQuantity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="FreeReview"/>
+        <NamedIndividual IRI="HighQuantity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="HighQuantity"/>
+        <NamedIndividual IRI="FreeReview"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="weight"/>
@@ -450,10 +450,10 @@
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="advicedBy"/>
+        <DataProperty IRI="identifier"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="identifier"/>
+        <ObjectProperty IRI="advicedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="RITE"/>
@@ -462,10 +462,10 @@
         <NamedIndividual IRI="ChefAnon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Team3"/>
+        <NamedIndividual IRI="Interviews"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Interviews"/>
+        <NamedIndividual IRI="Team3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="WeHaveMetTheProblem"/>
@@ -501,10 +501,10 @@
         <NamedIndividual IRI="BestOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ALikelyStory"/>
+        <Class IRI="CreativeTechnique"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CreativeTechnique"/>
+        <NamedIndividual IRI="ALikelyStory"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="BiWordal"/>
@@ -516,10 +516,10 @@
         <NamedIndividual IRI="ImplementAndMonitoring"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="CulturalProbes"/>
+        <ObjectProperty IRI="hasCreatTechnic"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasCreatTechnic"/>
+        <NamedIndividual IRI="CulturalProbes"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ProblemReversals"/>
@@ -534,10 +534,10 @@
         <NamedIndividual IRI="Aesthetic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="SportSubject"/>
+        <NamedIndividual IRI="ILikeItLikeThat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ILikeItLikeThat"/>
+        <NamedIndividual IRI="SportSubject"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:rights"/>
@@ -561,10 +561,10 @@
         <ObjectProperty IRI="hasInputType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Problem"/>
+        <NamedIndividual IRI="OrganizationalBrainstorms"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="OrganizationalBrainstorms"/>
+        <Class IRI="Problem"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="AlteredStates"/>
@@ -585,10 +585,10 @@
         <NamedIndividual IRI="CTsegment1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="HighDifficulty"/>
+        <NamedIndividual IRI="DoodlinAroundTheBlock"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DoodlinAroundTheBlock"/>
+        <NamedIndividual IRI="HighDifficulty"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Bodystorming"/>
@@ -600,22 +600,22 @@
         <NamedIndividual IRI="MediumFun"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DirectedStorytelling"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="organizeResponseTo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="TabloidTales"/>
+        <NamedIndividual IRI="DirectedStorytelling"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPreviousStage"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasAuthor"/>
+        <NamedIndividual IRI="TabloidTales"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="function"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAuthor"/>
     </Declaration>
     <Declaration>
         <Class IRI="CreativeStrategy"/>
@@ -654,16 +654,16 @@
         <NamedIndividual IRI="SpeedDating"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="PassTheHat"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="LotusBlossom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasHypernym"/>
+        <NamedIndividual IRI="PassTheHat"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="WhatIsIt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHypernym"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="PersonalInventory"/>
@@ -672,10 +672,10 @@
         <NamedIndividual IRI="Definition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="CompetitiveTesting"/>
+        <NamedIndividual IRI="FocusGroup"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="FocusGroup"/>
+        <NamedIndividual IRI="CompetitiveTesting"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:modified"/>
@@ -684,10 +684,10 @@
         <NamedIndividual IRI="Complexity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="BusinessOrigami"/>
+        <NamedIndividual IRI="ColoredPencils"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ColoredPencils"/>
+        <NamedIndividual IRI="BusinessOrigami"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="CTsegment3"/>
@@ -747,10 +747,10 @@
         <NamedIndividual IRI="CognitiveMapping"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://xmlns.com/foaf/0.1/#firstName"/>
+        <NamedIndividual IRI="Alex"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Alex"/>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/#firstName"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ResearchThroughDesign"/>
@@ -810,16 +810,19 @@
         <Class IRI="Subject"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="Workability"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasCTSource"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Implementation"/>
+        <NamedIndividual IRI="Ideatoons"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Ideatoons"/>
+        <NamedIndividual IRI="Implementation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ExperiencePrototyping"/>
@@ -831,49 +834,49 @@
         <NamedIndividual IRI="Strategy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Be1"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="ConceptMapping"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Popplet"/>
+        <NamedIndividual IRI="Be1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="CopyCat"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <NamedIndividual IRI="Popplet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="GrandAnon2"/>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Effectivness"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="EssenceOfTheProblem"/>
+        <NamedIndividual IRI="GrandAnon2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="IdeaShowers"/>
     </Declaration>
     <Declaration>
-        <Class IRI="StimuliType"/>
+        <NamedIndividual IRI="EssenceOfTheProblem"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="equipe"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="TicklerThings"/>
+        <Class IRI="StimuliType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Security"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="PostItPardner"/>
+        <NamedIndividual IRI="TicklerThings"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="PuzzlePieces"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PostItPardner"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Idea1"/>
@@ -882,10 +885,10 @@
         <NamedIndividual IRI="GeneralizedInc"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="StakeholdersMap"/>
+        <NamedIndividual IRI="FlexibleModeling"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="FlexibleModeling"/>
+        <NamedIndividual IRI="StakeholdersMap"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ConceptGeneration"/>
@@ -912,25 +915,25 @@
         <NamedIndividual IRI="Bubbl.us"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="NPD"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="GrandAnon1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="MentalBreakdown"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="hasWeight"/>
+        <NamedIndividual IRI="NPD"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasFunFactor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasQuantityLevel"/>
+        <DataProperty IRI="hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MentalBreakdown"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasQuantityLevel"/>
     </Declaration>
     <Declaration>
         <Class IRI="Artifact"/>
@@ -942,10 +945,10 @@
         <NamedIndividual IRI="Idea2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ParallelPrototyping"/>
+        <ObjectProperty IRI="requireStimuliType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="requireStimuliType"/>
+        <NamedIndividual IRI="ParallelPrototyping"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="TurnAround"/>
@@ -957,10 +960,10 @@
         <NamedIndividual IRI="ImageBoard"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="TaskAnalysis"/>
+        <ObjectProperty IRI="isSolvedDuring"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isSolvedDuring"/>
+        <NamedIndividual IRI="TaskAnalysis"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="LawBreaker"/>
@@ -978,13 +981,13 @@
         <DataProperty IRI="novelty"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="cw48h2014"/>
+        <NamedIndividual IRI="EvalStrat1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="DesirabilityTesting"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="EvalStrat1"/>
+        <NamedIndividual IRI="cw48h2014"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Feasibility"/>
@@ -1005,19 +1008,19 @@
         <NamedIndividual IRI="Participatory"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="schema:member"/>
+        <DataProperty IRI="http://schema.org/startDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://schema.org/startDate"/>
+        <ObjectProperty abbreviatedIRI="schema:member"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="schema:memberOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="HumanRess"/>
+        <NamedIndividual IRI="Blender"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Blender"/>
+        <NamedIndividual IRI="HumanRess"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasContextType"/>
@@ -1026,10 +1029,10 @@
         <NamedIndividual IRI="EvalStrat2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="TextTickler"/>
+        <NamedIndividual IRI="HelmetSubject"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="HelmetSubject"/>
+        <NamedIndividual IRI="TextTickler"/>
     </Declaration>
     <Declaration>
         <Class IRI="StrategySegment"/>
@@ -1065,10 +1068,10 @@
         <NamedIndividual IRI="MadScientist"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Completeness"/>
+        <NamedIndividual IRI="PostIt"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="PostIt"/>
+        <NamedIndividual IRI="Completeness"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasNoveltyLevel"/>
@@ -1128,10 +1131,10 @@
         <ObjectProperty IRI="isImplementedDuring"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasStimuliType"/>
+        <ObjectProperty IRI="evaluateResponseTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="evaluateResponseTo"/>
+        <ObjectProperty IRI="hasStimuliType"/>
     </Declaration>
     <Declaration>
         <Class IRI="Activity"/>
@@ -1161,10 +1164,10 @@
         <ObjectProperty IRI="hasPrevious"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasResult"/>
+        <NamedIndividual IRI="Attitudinal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Attitudinal"/>
+        <ObjectProperty IRI="hasResult"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasProgression"/>
@@ -1173,13 +1176,13 @@
         <DataProperty IRI="innovationRange"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="Triangulation"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="DesignCharette"/>
     </Declaration>
     <Declaration>
         <Class IRI="ImplementableCT"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Triangulation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasEvalStrat"/>
@@ -1194,10 +1197,10 @@
         <DataProperty IRI="innovationScope"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isMaterializing"/>
+        <Class IRI="FunFactor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="FunFactor"/>
+        <ObjectProperty IRI="isMaterializing"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
@@ -1210,6 +1213,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="SelfReporting"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vocab:vannpreferredNamespaceUri"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isFormalizing"/>
@@ -1227,10 +1233,10 @@
         <ObjectProperty IRI="isCriterizedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasImplementableCT"/>
+        <Class IRI="DifficultyLevel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DifficultyLevel"/>
+        <ObjectProperty IRI="hasImplementableCT"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ChainAlike"/>
@@ -1257,10 +1263,10 @@
         <Class IRI="ApplicationMode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Stimuli"/>
+        <NamedIndividual IRI="Observational"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Observational"/>
+        <Class IRI="Stimuli"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="HighFun"/>
@@ -1272,10 +1278,10 @@
         <NamedIndividual IRI="DigitalDevice"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Prototyping"/>
+        <Class IRI="LastSegment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LastSegment"/>
+        <NamedIndividual IRI="Prototyping"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPlanified"/>
@@ -1287,10 +1293,10 @@
         <Class IRI="FirstSegment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isFollowedBy"/>
+        <NamedIndividual IRI="Coggle"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Coggle"/>
+        <ObjectProperty IRI="isFollowedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isFormalizedFrom"/>
@@ -1299,10 +1305,10 @@
         <NamedIndividual IRI="KeyPerfIndicator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isMaterializedBy"/>
+        <NamedIndividual IRI="RemoteModeratedResearch"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="RemoteModeratedResearch"/>
+        <ObjectProperty IRI="isMaterializedBy"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="duration"/>
@@ -1338,16 +1344,16 @@
         <NamedIndividual IRI="IdeaPool"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="WeightedMatrix"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="ValueOpportunityAnalysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DecisionMaker"/>
+        <NamedIndividual IRI="WeightedMatrix"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isEvaluatedDuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DecisionMaker"/>
     </Declaration>
     <Declaration>
         <Class IRI="InputType"/>
@@ -1380,10 +1386,10 @@
         <NamedIndividual IRI="Surveys"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Acceptability"/>
+        <ObjectProperty IRI="hasSuggestedCTAlternative"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasSuggestedCTAlternative"/>
+        <NamedIndividual IRI="Acceptability"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ParticipatoryActionResearch"/>
@@ -1398,13 +1404,13 @@
         <Class IRI="DataType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ArtifactAnalysis"/>
+        <ObjectProperty IRI="hasNext"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Roleplaying"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasNext"/>
+        <NamedIndividual IRI="ArtifactAnalysis"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="666"/>
@@ -1422,22 +1428,22 @@
         <NamedIndividual IRI="BattleOfTheSexes"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="QuantitativeData"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hasSpecialization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasIdeator"/>
+        <NamedIndividual IRI="QuantitativeData"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Related"/>
+        <ObjectProperty IRI="hasIdeator"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="MusicMania"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Relevance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Related"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isAppliedInContext"/>
@@ -1509,10 +1515,10 @@
         <NamedIndividual IRI="advc1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="EvidenceBasedDesign"/>
+        <NamedIndividual IRI="IdeaDiary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="IdeaDiary"/>
+        <NamedIndividual IRI="EvidenceBasedDesign"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="obj1"/>
@@ -1575,10 +1581,10 @@
         <NamedIndividual IRI="ForceFitGame"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DesignWorkshop"/>
+        <NamedIndividual IRI="WordCloud"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="WordCloud"/>
+        <NamedIndividual IRI="DesignWorkshop"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="website"/>
@@ -1590,16 +1596,19 @@
         <NamedIndividual IRI="MuseumMadness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DigitalTool"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="MindMapping"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="EvalAndRafinement"/>
     </Declaration>
     <Declaration>
+        <Class IRI="DigitalTool"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="PlayByPlay"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vocab:vannpreferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Verbal"/>
@@ -1629,22 +1638,13 @@
         <NamedIndividual IRI="ImaginaryMentor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EvaluationCriteria"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="Doodles"/>
     </Declaration>
     <Declaration>
+        <Class IRI="EvaluationCriteria"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="PartsIsParts"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vocab:vannpreferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vocab:vannpreferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="CreativeTechnique"/>
@@ -5060,14 +5060,14 @@
         <NamedIndividual IRI="MediumQuantity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="requireStimuliType"/>
-        <NamedIndividual IRI="CopyCat"/>
-        <NamedIndividual IRI="Unrelated"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="isRelatedTo"/>
         <NamedIndividual IRI="CopyCat"/>
         <NamedIndividual IRI="BrainBorrow"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requireStimuliType"/>
+        <NamedIndividual IRI="CopyCat"/>
+        <NamedIndividual IRI="Unrelated"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="hasCreatTechnic"/>
@@ -5500,14 +5500,14 @@
         <NamedIndividual IRI="MediumQuantity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="requireStimuliType"/>
-        <NamedIndividual IRI="DeadHeadDeadline"/>
-        <NamedIndividual IRI="Related"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="isRelatedTo"/>
         <NamedIndividual IRI="DeadHeadDeadline"/>
         <NamedIndividual IRI="IdeaShopping"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requireStimuliType"/>
+        <NamedIndividual IRI="DeadHeadDeadline"/>
+        <NamedIndividual IRI="Related"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="hasNextStage"/>
@@ -6860,6 +6860,11 @@
         <NamedIndividual IRI="MediumQuantity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isRelatedTo"/>
+        <NamedIndividual IRI="GetCrazy"/>
+        <NamedIndividual IRI="WhatIf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="requireStimuliType"/>
         <NamedIndividual IRI="GetCrazy"/>
         <NamedIndividual IRI="Related"/>
@@ -6868,11 +6873,6 @@
         <ObjectProperty IRI="requireStimuliType"/>
         <NamedIndividual IRI="GetCrazy"/>
         <NamedIndividual IRI="Unrelated"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="isRelatedTo"/>
-        <NamedIndividual IRI="GetCrazy"/>
-        <NamedIndividual IRI="WhatIf"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="appliedInContextType"/>
@@ -7625,14 +7625,14 @@
         <NamedIndividual IRI="HighQuantity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="requireStimuliType"/>
-        <NamedIndividual IRI="IdeaShopping"/>
-        <NamedIndividual IRI="Unrelated"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="isRelatedTo"/>
         <NamedIndividual IRI="IdeaShopping"/>
         <NamedIndividual IRI="IdeaDiary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requireStimuliType"/>
+        <NamedIndividual IRI="IdeaShopping"/>
+        <NamedIndividual IRI="Unrelated"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="appliedInContextType"/>
@@ -10915,6 +10915,11 @@
         <NamedIndividual IRI="MediumQuantity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isRelatedTo"/>
+        <NamedIndividual IRI="Switcheroo"/>
+        <NamedIndividual IRI="IdeaDiary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="requireStimuliType"/>
         <NamedIndividual IRI="Switcheroo"/>
         <NamedIndividual IRI="Related"/>
@@ -10923,11 +10928,6 @@
         <ObjectProperty IRI="requireStimuliType"/>
         <NamedIndividual IRI="Switcheroo"/>
         <NamedIndividual IRI="Unrelated"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="isRelatedTo"/>
-        <NamedIndividual IRI="Switcheroo"/>
-        <NamedIndividual IRI="IdeaDiary"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="hasNextStage"/>
@@ -11490,6 +11490,11 @@
         <NamedIndividual IRI="HighQuantity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isRelatedTo"/>
+        <NamedIndividual IRI="WakeUpCall"/>
+        <NamedIndividual IRI="IdeaDiary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="requireStimuliType"/>
         <NamedIndividual IRI="WakeUpCall"/>
         <NamedIndividual IRI="Related"/>
@@ -11498,11 +11503,6 @@
         <ObjectProperty IRI="requireStimuliType"/>
         <NamedIndividual IRI="WakeUpCall"/>
         <NamedIndividual IRI="Unrelated"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="isRelatedTo"/>
-        <NamedIndividual IRI="WakeUpCall"/>
-        <NamedIndividual IRI="IdeaDiary"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="appliedInContextType"/>
@@ -14923,6 +14923,31 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HighDifficulty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High Difficulty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HighEnergy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HighFun</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High Fun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HighNovelty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High Novelty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HighQuantity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">High Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>HumanRess</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Human Resources</Literal>
     </AnnotationAssertion>
@@ -15095,6 +15120,56 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>LotusBlossom</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lotus Blossom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LowDifficulty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Low Difficulty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LowEnergy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Low Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LowFun</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Low Fun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LowNovelty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Low Novelty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LowQuantity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Low Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumDifficulty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium Difficulty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumEnergy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumFun</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium Fun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumNovelty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium Novel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumQuantity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium Quantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15897,3 +15972,4 @@ this relation highlight the fact taht a creative strategy implemented during a C
 
 
 <!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
